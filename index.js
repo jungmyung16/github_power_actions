@@ -9,7 +9,7 @@ async function makeIssue() {
         },
         body: JSON.stringify({
             title : "내일 행운의 숫자는?",
-            body : `${Math.floor(Math.random() * 10) + 1}`,
+            body : `${Math.floor(Math.random() * 100) + 1}`,
         })
     });
     if(response.ok) {
